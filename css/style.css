@@ -1,5 +1,12 @@
+:root {
+  --accent: #174180;
+  --accent-light: #3764a7;
+  --pure-white: #fff;
+}
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -7,13 +14,25 @@ html {
   box-sizing: inherit;
 }
 body {
+  margin: 0 auto;
+  width: 1220px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-size: 1.3em;
+  background-color: rgb(206, 247, 233);
 }
 .container {
   width: 1140px;
-  border: 1px solid black;
   margin: 0 auto;
+}
+.section {
+  padding: 60px 0;
+}
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+header {
+  margin: 0px auto;
 }
 header a {
   color: #fff;
@@ -25,7 +44,7 @@ header a {
 
 .header-nav {
   padding: 10px 0;
-  background-color: rgb(75, 75, 211);
+  background-color: var(--accent);
   color: #fff;
 }
 .menu {
@@ -43,4 +62,90 @@ header a {
   text-transform: uppercase;
   padding: 0 15px;
   font-size: 16px;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+.container2 {
+  margin: auto 50px;
+  padding: auto 30px;
+}
+.intro {
+  padding: 0;
+  margin: 60px 0;
+}
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-left {
+  width: 30%;
+}
+.intro-img {
+  background-image: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.intro-right {
+  width: 60%;
+}
+.intro-right h1,
+.intro-right h3 {
+  margin: 0 0 10px;
+}
+.contacts {
+  margin-bottom: 60px;
+}
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts li {
+  text-align: center;
+}
+
+.skills {
+  padding: 60px 0;
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.skills li {
+  padding: 10px 25px;
+  background-color: var(--accent-light);
+  border-radius: 4px;
+}
+.code-example {
+  text-align: center;
+}
+.code-example p {
+  font-style: italic;
+}
+.code-example b {
+  font-style: normal;
+}
+.code-example pre {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2em;
+  background-color: var(--accent);
+  color: var(--pure-white);
+  border-radius: 8px;
 }
